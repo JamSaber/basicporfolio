@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap');
+
+:root{
+   --span-color: #ffd300;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.2rem 8rem 2rem 8rem;
+}
+.logo{
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+span{
+    color: var(--span-color);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: var(--span-color);
+    transition: .4s;
+}
+
+.content{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translateY(-50%);;
+}
+
+h1{
+    color:white;
+    margin: 1.2rem 0rem 1.2rem;
+    font-size: 100px;
+}
+h3{
+    color: white;
+    font-size: 40px;
+}
+h4{
+    color: var(--span-color);
+    font-size: 30px;
+}
+.news form{
+    padding-top: 5px;
+    width: 24rem;
+    max-width: 100%;
+    position: relative;
+}
+.news form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid var(--span-color);
+    outline: none;
+    border-radius: 30px;
+}
+.news form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--span-color);
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    font-weight: bold;
+    top: 11px;
+    right: 6px;
+    cursor: pointer;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+}
+.about h5{
+    color: white;
+    padding: .5rem 0 .3rem 0;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.about h2{
+    color: white;
+    font-size: 30px;
+}
+.about h4{
+    padding-top: .5rem;
+    font-size: 20px;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    color: #000;
+    background-color: var(--span-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 13px;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .8s;
+}
+button:hover{
+    background-color: transparent;
+    border: 3px solid var(--span-color);
+    color: var(--span-color);
+    cursor: pointer;
+}
+
+.skills{
+    padding: 20px;
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px ;
+    border: 2px solid transparent;
+    
+}
+.Designer{
+    background-color:gray;
+    padding: 60px 20px 60px 20px;
+    line-height: 2rem;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+.Designer:hover{
+    padding: 60px 20px 60px 20px;
+    background-color: transparent;
+    transition: .5s;
+    border: 3px solid var(--span-color);
+}
+.Front-end{
+    background-color:gray;
+    padding: 60px 20px 60px 20px;
+    line-height: 2rem;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+.Front-end:hover{
+    padding: 60px 20px 60px 20px;
+    background-color: transparent;
+    transition: .5s;
+    border: 3px solid var(--span-color);
+}
+.back-end{
+    background-color:gray;
+    padding: 60px 20px 60px 20px;
+    line-height: 2rem;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+.back-end:hover{
+    padding: 60px 20px 60px 20px;
+    background-color: transparent;
+    transition: .5s;
+    border: 3px solid var(--span-color);
+}
+.skills h2{
+    color: var(--span-color);
+    font-size: 2rem;
+}
+.skills h6{
+    padding-top: 1.5rem;
+    color: var(--span-color);
+    font-size: 1rem;
+}
+.skills h5{
+    line-height: 1rem;
+}
+
+.skillTittle{
+    padding: 0 0 1rem 2rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
